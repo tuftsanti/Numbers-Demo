@@ -1,0 +1,51 @@
+#output-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Raleway';
+    font-size: 66px;
+    /* text-align: center; */
+    /* left: 50vw; */
+    margin: 60px auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.output-box-negative {
+    color: red;
+}
+
+section {
+    display: flex;  /* defaults to row layout */
+    justify-content: center;  /* centers items horizontally in row layout */
+    align-items: center;  /* centers vertically in row layout */
+    /* flex-direction: column; will set layout to column instead of row */
+}
+
+button {
+    border-style: solid #a9a9a9;
+    margin: auto 30px;
+    vertical-align: middle;
+    background-color: #a9a9a9;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 40px;
+    height: 72px;
+    width: 72px;
+    border: 1px solid #a9a9a9;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: white;
+    color: #a9a9a9;
+}
+
+#input-box {
+    text-align: center;
+    height: 60px;
+    width: 160px;
+    border: 5px solid #a9a9a9;
+    border-radius: 7px;
+    font-size: 45px;
+    color: black;
+}
