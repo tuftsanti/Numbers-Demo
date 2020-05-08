@@ -9,6 +9,9 @@ $('#plus').on('click', () => {
     const origNumber = $('#output-box').val();
     // console.log($origNumber)
     const newNumber = parseInt(origNumber) + parseInt(input)
+    if (newNumber >= 0) {
+        $('#output-box').removeClass('output-box-negative')
+    }
     $('#output-box').html(newNumber);
 })
 
@@ -17,5 +20,8 @@ $('#minus').on('click', () => {
     const origNumber = $('#output-box').val();
     // console.log($origNumber)
     const newNumber = parseInt(origNumber) - parseInt(input)
+    if (newNumber < 0) {
+        $('#output-box').addClass('output-box-negative')
+    }
     $('#output-box').html(newNumber);
 })
